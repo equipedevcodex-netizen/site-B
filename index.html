@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Bruna Lash &amp; Brow | Design de sobrancelhas e extensão de cílios</title>
+<meta name="description" content="Studio Bruna Lash & Brow: design de sobrancelhas, henna e extensão de cílios em Lucas do Rio Verde - MT. Agende seu horário pelo WhatsApp.">
+<meta name="theme-color" content="#151213">
+<meta property="og:title" content="Studio Bruna Lash & Brow">
+<meta property="og:description" content="Realce a sua beleza natural e eleve a sua confiança. Design de sobrancelhas e extensão de cílios em Lucas do Rio Verde - MT.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Studio Bruna Lash & Brow",
+  "telephone": "+55 65 99621-5645",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida Mato Grosso, 452-S, Centro",
+    "addressLocality": "Lucas do Rio Verde",
+    "addressRegion": "MT",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #151213;
+    --bg-2: #1c1819;
+    --surface: #241f21;
+    --surface-hi: #2d2729;
+    --ink: #f8f1ed;
+    --ink-soft: #cfc4c1;
+    --ink-mute: #8f8483;
+    --rose: #f3cdd4;
+    --rose-hi: #fbdde2;
+    --gold: #d0af6d;
+    --gold-line: rgba(208, 175, 109, .28);
+    --gold-line-strong: rgba(208, 175, 109, .55);
+    --on-rose: #2a1b20;
+
+    --r-card: 20px;
+    --r-panel: 14px;
+    --r-pill: 999px;
+    --shadow-card: 0 22px 40px -24px rgba(0, 0, 0, .8), 0 2px 6px rgba(0, 0, 0, .25);
+
+    --font-display: 'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
+    --font-body: 'Jost', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+
+    color-scheme: dark;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html {
+    background: var(--bg);
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink-soft);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg { max-width: 100%; }
+  h1, h2, h3 { color: var(--ink); font-family: var(--font-display); font-weight: 400; margin: 0; }
+  p { margin: 0; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+  /* ---------- Botões ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+    min-height: 52px; padding: 0 1.7rem;
+    border-radius: var(--r-pill);
+    font: 500 1rem/1 var(--font-body);
+    text-decoration: none; cursor: pointer; border: 1px solid transparent;
+    transition: transform .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn svg { width: 22px; height: 22px; flex: none; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(0); }
+  .btn-primary { background: var(--rose); color: var(--on-rose); }
+  .btn-primary:hover { background: var(--rose-hi); }
+  .btn-outline { border-color: var(--gold-line-strong); color: var(--ink); background: transparent; }
+  .btn-outline:hover { background: var(--gold); border-color: var(--gold); color: #241b0d; }
+  .btn-sm { min-height: 42px; padding: 0 1.15rem; font-size: .95rem; }
+  .btn-block { width: 100%; }
+  .pulse { animation: pulse 2.4s ease-out infinite; }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(243, 205, 212, .55); }
+    70%  { box-shadow: 0 0 0 18px rgba(243, 205, 212, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(243, 205, 212, 0); }
+  }
+
+  /* ---------- Topo ---------- */
+  .top { padding: 18px 0; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 28px 0 72px; }
+  .hero-grid { display: grid; gap: 44px; align-items: center; }
+  .hero h1 { font-size: clamp(2.35rem, 9.2vw, 4.3rem); line-height: 1.07; letter-spacing: -.012em; }
+  .hero h1 em { display: block; font-style: italic; color: var(--rose); margin-top: .12em; }
+  .lead { margin-top: 22px; font-size: 1.15rem; max-width: 34ch; color: var(--ink-soft); }
+  .hero-cta { margin-top: 32px; display: grid; gap: 14px; justify-items: start; }
+  .hero-cta .btn { width: 100%; }
+  .hero-note { font-size: .95rem; color: var(--ink-mute); }
+
+  .hero-visual { display: grid; justify-items: center; }
+  .portrait {
+    position: relative; width: min(78vw, 330px); aspect-ratio: 1; padding: 14px;
+    border-radius: 50%; border: 1px solid var(--gold-line);
+  }
+  .portrait-inner {
+    width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+    display: grid; place-items: center;
+    background: radial-gradient(circle at 50% 36%, #3b2c31 0%, #1e181a 72%);
+    border: 1px solid var(--gold-line-strong);
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .9);
+  }
+  .portrait-inner img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait-inner svg { width: 68%; color: var(--gold); }
+  .portrait-tag {
+    position: absolute; left: 50%; bottom: 2px; transform: translateX(-50%);
+    background: var(--surface-hi); color: var(--ink); border: 1px solid var(--gold-line-strong);
+    padding: 8px 16px; border-radius: var(--r-pill); font-size: .9rem; white-space: nowrap;
+  }
+
+  /* ---------- Seções ---------- */
+  .section { padding: 68px 0; }
+  .section-alt { background: var(--bg-2); }
+  .section-head { margin-bottom: 36px; }
+  .section h2 { font-size: clamp(1.9rem, 6.2vw, 2.9rem); line-height: 1.12; }
+  .section-lead { margin-top: 12px; max-width: 46ch; }
+
+  /* Serviços */
+  .cards { display: grid; gap: 18px; }
+  .card {
+    position: relative; display: flex; flex-direction: column; gap: 14px;
+    padding: 28px 26px; background: var(--surface);
+    border: 1px solid var(--gold-line); border-radius: var(--r-card); box-shadow: var(--shadow-card);
+  }
+  .card-ico { width: 64px; height: 64px; color: var(--gold); margin-bottom: 4px; }
+  .card h3 { font-size: 1.55rem; line-height: 1.18; }
+  .price { margin-top: auto; padding-top: 10px; font-family: var(--font-display); font-size: 2.7rem; line-height: 1; color: var(--gold); }
+  .price small { font-family: var(--font-body); font-size: 1rem; color: var(--ink-soft); margin-right: 6px; }
+  .price-alt { font-family: var(--font-display); font-style: italic; font-size: 1.5rem; color: var(--gold); margin-top: auto; padding-top: 10px; }
+  .badge {
+    align-self: flex-start; padding: 6px 14px; border-radius: var(--r-pill);
+    background: rgba(208, 175, 109, .14); color: var(--gold); border: 1px solid var(--gold-line-strong);
+    font-size: .875rem; font-weight: 500;
+  }
+  .card .btn { margin-top: 8px; }
+
+  /* Diferenciais */
+  .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 18px; }
+  .pillar { text-align: center; }
+  .pillar .ico {
+    width: 64px; height: 64px; margin: 0 auto 16px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 1.7rem;
+    border: 1px solid var(--gold-line-strong); background: var(--surface);
+  }
+  .pillar h3 { font-size: 1.25rem; line-height: 1.2; margin-bottom: 8px; }
+  .pillar p { font-size: 1rem; }
+
+  /* Galeria */
+  .gal-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+  .gal-head .section-head { margin: 0; }
+  .gal-nav { display: flex; gap: 10px; flex: none; }
+  .gal-nav[hidden] { display: none; }
+  .gal-nav button {
+    width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+    background: transparent; color: var(--ink); border: 1px solid var(--gold-line-strong);
+    display: grid; place-items: center; transition: background-color .2s, opacity .2s;
+  }
+  .gal-nav button:hover:not(:disabled) { background: var(--surface-hi); }
+  .gal-nav button:disabled { opacity: .35; cursor: default; }
+  .gal-nav svg { width: 20px; height: 20px; }
+  .track {
+    display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 4px 20px 18px; margin-inline: -20px; scrollbar-width: none;
+  }
+  .track::-webkit-scrollbar { display: none; }
+  .ba { flex: 0 0 min(88%, 440px); scroll-snap-align: start; margin: 0; }
+  .ba-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .ba-panel {
+    position: relative; aspect-ratio: 4 / 5; border-radius: var(--r-panel); overflow: hidden;
+    background: var(--surface); border: 1px solid var(--gold-line);
+    box-shadow: var(--shadow-card);
+  }
+  .ba-panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .tag {
+    position: absolute; top: 10px; left: 10px; z-index: 1;
+    padding: 4px 12px; border-radius: var(--r-pill); font-size: .8rem; font-weight: 500;
+    background: rgba(21, 18, 19, .82); color: var(--ink);
+  }
+  .ba figcaption { margin-top: 12px; font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); }
+
+  /* Contato */
+  .contact { padding: 68px 0 120px; background: var(--bg-2); border-top: 1px solid var(--gold-line); }
+  .contact-grid { display: grid; gap: 36px; }
+  .contact h2 { font-size: clamp(1.9rem, 6.2vw, 2.9rem); line-height: 1.12; margin-bottom: 26px; }
+  .info { list-style: none; margin: 0 0 30px; padding: 0; display: grid; gap: 22px; }
+  .info li { display: flex; gap: 16px; align-items: flex-start; }
+  .info .ring {
+    flex: none; width: 46px; height: 46px; border-radius: 50%;
+    display: grid; place-items: center; color: var(--gold); border: 1px solid var(--gold-line-strong);
+  }
+  .info .ring svg { width: 22px; height: 22px; }
+  .info strong { display: block; color: var(--ink); font-weight: 500; }
+  .info a { text-decoration: none; }
+  .info a:hover { color: var(--rose); }
+  .map {
+    position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; text-decoration: none;
+    border-radius: var(--r-card); border: 1px solid var(--gold-line-strong); box-shadow: var(--shadow-card);
+  }
+  .map > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .map-chip {
+    position: absolute; left: 14px; right: 14px; bottom: 14px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: rgba(21, 18, 19, .9); border: 1px solid var(--gold-line-strong);
+    padding: 12px 16px; border-radius: 14px; color: var(--ink); font-size: .95rem;
+  }
+  .map-chip span:last-child { color: var(--rose); font-weight: 500; white-space: nowrap; }
+  .pin-pulse { transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
+  @keyframes ping { 0% { transform: scale(.6); opacity: .8; } 100% { transform: scale(3.2); opacity: 0; } }
+  .copy { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--gold-line); font-size: .9rem; color: var(--ink-mute); }
+
+  /* Barra fixa (celular) */
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: rgba(21, 18, 19, .94); border-top: 1px solid var(--gold-line);
+    transform: translateY(110%); visibility: hidden;
+    transition: transform .3s ease, visibility 0s linear .3s;
+  }
+  .bar.show { transform: none; visibility: visible; transition: transform .3s ease; }
+
+  /* ---------- Telas maiores ---------- */
+  @media (min-width: 720px) {
+    .bar { display: none; }
+    .hero { padding: 56px 0 96px; }
+    .hero-grid { grid-template-columns: 1.1fr .9fr; gap: 56px; }
+    .hero-cta { grid-auto-flow: column; justify-items: start; align-items: center; justify-content: start; gap: 22px; }
+    .hero-cta .btn { width: auto; min-height: 58px; padding: 0 2.2rem; }
+    .portrait { width: min(100%, 420px); }
+    .section { padding: 96px 0; }
+    .cards { grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .pillars { grid-template-columns: repeat(4, 1fr); gap: 28px; }
+    .track { padding-inline: 0; margin-inline: 0; }
+    .ba { flex: 1 0 calc(50% - 8px); }
+    .contact { padding: 96px 0 56px; }
+    .contact-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+    .map { aspect-ratio: 5 / 4; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .pulse, .pin-pulse { animation: none; }
+    .btn, .bar, .bar.show { transition: none; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="eye-before" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M36 118 Q100 78 164 118 Q100 156 36 118Z"/>
+        <circle cx="100" cy="118" r="17"/>
+        <path d="M62 105 L56 96 M100 98 L100 88 M138 105 L144 96"/>
+      </g>
+      <circle cx="100" cy="118" r="6" fill="currentColor"/>
+    </symbol>
+    <symbol id="eye-after" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M36 118 Q100 78 164 118 Q100 156 36 118Z"/>
+        <circle cx="100" cy="118" r="17"/>
+        <path d="M46 112 L32 98 M62 105 L48 84 M81 100 L74 78 M100 98 L100 72 M119 100 L126 78 M138 105 L152 84 M154 112 L168 98"/>
+      </g>
+      <circle cx="100" cy="118" r="6" fill="currentColor"/>
+    </symbol>
+    <symbol id="brow-before" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+        <path d="M36 118 L46 100 M52 108 L60 92 M70 98 L80 84 M92 92 L102 82 M118 88 L128 82 M146 92 L152 90 M158 102 L166 100"/>
+      </g>
+    </symbol>
+    <symbol id="brow-after" viewBox="0 0 200 200">
+      <path fill="currentColor" d="M34 112 Q56 74 110 72 Q150 72 170 96 Q140 84 108 88 Q66 92 34 112Z"/>
+    </symbol>
+    <symbol id="brow-henna" viewBox="0 0 200 200">
+      <path fill="currentColor" d="M32 118 Q54 68 110 66 Q152 66 174 100 Q140 78 108 84 Q64 90 32 118Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#topo">Studio Bruna Lash &amp; Brow</a>
+    <a class="btn btn-outline btn-sm" href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer" data-wa>Agendar</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== SEÇÃO 1: HERO ===== -->
+  <section class="hero" id="topo">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Realce a sua beleza natural <em>e eleve a sua confiança.</em></h1>
+        <p class="lead">Studio Bruna Lash &amp; Brow — Especialista em Design de Sobrancelhas e Extensão de Cílios em Lucas do Rio Verde - MT.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary pulse" id="cta-hero" data-hide-bar data-wa
+             data-msg="Olá! Vim pela página do Studio Bruna Lash &amp; Brow e gostaria de agendar um horário."
+             href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.3-1.65a11.9 11.9 0 0 0 5.75 1.47h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.44-8.44zM12.06 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.87 9.87 0 0 1-1.51-5.27c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.98 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.88 9.89zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg>
+            Agende seu Horário
+          </a>
+          <p class="hero-note">Toque no botão e converse direto com a Bruna pelo WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Para usar a foto ou a logo redonda: troque o <svg> abaixo por
+             <img src="logo-bruna.jpg" alt="Logo do Studio Bruna Lash & Brow"> -->
+        <div class="portrait" role="img" aria-label="Espaço reservado para a foto de portfólio ou a logo da Bruna Pahim">
+          <div class="portrait-inner">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <use href="#brow-after" transform="translate(0,-40)" style="color:var(--rose)"/>
+              <use href="#eye-after" transform="translate(0,18)"/>
+            </svg>
+          </div>
+          <span class="portrait-tag">Lucas do Rio Verde - MT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 2: SERVIÇOS E PREÇOS ===== -->
+  <section class="section section-alt" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Serviços e valores</h2>
+        <p class="section-lead">Escolha o serviço e agende direto pelo WhatsApp.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <svg class="card-ico" viewBox="0 0 200 200" aria-hidden="true"><use href="#brow-after"/></svg>
+          <h3>Design de Sobrancelhas</h3>
+          <p>Alinhamento perfeito para valorizar o seu olhar.</p>
+          <p class="price"><small>R$</small><data value="40">40,00</data></p>
+          <a class="btn btn-outline btn-block" data-wa data-msg="Olá! Quero agendar um Design de Sobrancelhas (R$ 40,00)."
+             href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">Agendar este serviço</a>
+        </article>
+
+        <article class="card">
+          <svg class="card-ico" viewBox="0 0 200 200" aria-hidden="true"><use href="#brow-henna"/></svg>
+          <h3>Design de Sobrancelhas + Henna</h3>
+          <p>Definição, cor e preenchimento natural.</p>
+          <p class="price"><small>R$</small><data value="50">50,00</data></p>
+          <a class="btn btn-outline btn-block" data-wa data-msg="Olá! Quero agendar Design de Sobrancelhas + Henna (R$ 50,00)."
+             href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">Agendar este serviço</a>
+        </article>
+
+        <article class="card">
+          <span class="badge">Material de Alta Qualidade</span>
+          <svg class="card-ico" viewBox="0 0 200 200" aria-hidden="true"><use href="#eye-after"/></svg>
+          <h3>Extensão de Cílios</h3>
+          <p>Técnica segura, confortável e de alta durabilidade com resultado natural.</p>
+          <p class="price-alt">Consulte os valores</p>
+          <a class="btn btn-outline btn-block" data-wa data-msg="Olá! Quero agendar uma Extensão de Cílios e saber os valores."
+             href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">Agendar este serviço</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 3: DIFERENCIAIS ===== -->
+  <section class="section" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Por que escolher o estúdio</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="ico" aria-hidden="true">🌸</div>
+          <h3>Atendimento exclusivo</h3>
+          <p>Personalizado, do jeito que o seu olhar pede.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico" aria-hidden="true">✨</div>
+          <h3>Resultados naturais</h3>
+          <p>Que respeitam os seus traços.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico" aria-hidden="true">🛡️</div>
+          <h3>Técnica segura e confortável</h3>
+          <p>Cuidado com a saúde dos fios.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico" aria-hidden="true">🏆</div>
+          <h3>Produtos de alta qualidade</h3>
+          <p>Mais durabilidade no resultado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 4: GALERIA ===== -->
+  <section class="section section-alt" id="galeria">
+    <div class="wrap">
+      <div class="gal-head">
+        <div class="section-head">
+          <h2>Antes e depois das minhas clientes</h2>
+        </div>
+        <div class="gal-nav">
+          <button type="button" id="prev" aria-label="Ver resultado anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button type="button" id="next" aria-label="Ver próximo resultado">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Para trocar ou incluir fotos: duplique um <figure class="ba"> e use imagens na proporção 4:5. -->
+      <div class="track" id="trilho" tabindex="0" role="region" aria-label="Galeria de antes e depois">
+        <figure class="ba">
+          <div class="ba-pair">
+            <div class="ba-panel"><span class="tag">Antes</span><img src="antes.jpeg"></div>
+            <div class="ba-panel"><span class="tag">Depois</span><img src="depois.jpeg"></div>
+          <figcaption>Extensão de cílios</figcaption>
+        </figure>
+
+
+
+                <figure class="ba">
+          <div class="ba-pair">
+            <div class="ba-panel"><span class="tag">Antes</span><img src="antes-2.jpeg"></div>
+            <div class="ba-panel"><span class="tag">Depois</span><img src="depois-2.jpeg"></div>
+          <figcaption>Design de sobrancelhas</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== SEÇÃO 5: LOCALIZAÇÃO E CONTATO ===== -->
+<footer class="contact" id="contato">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2>Onde nos encontrar</h2>
+        <ul class="info">
+          <li>
+            <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <span><strong>Avenida Mato Grosso, 452-S, Centro</strong>Lucas do Rio Verde - MT<br>Ao lado da Lojas Renner</span>
+          </li>
+          <li>
+            <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span><strong>Telefone / WhatsApp</strong><a href="tel:+5565996215645">(65) 9 9621-5645</a></span>
+          </li>
+        </ul>
+        <a class="btn btn-primary pulse btn-block" id="cta-final" data-hide-bar data-wa
+           data-msg="Olá! Vim pela página do Studio Bruna Lash &amp; Brow e gostaria de agendar um horário."
+           href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.3-1.65a11.9 11.9 0 0 0 5.75 1.47h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.44-8.44zM12.06 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.87 9.87 0 0 1-1.51-5.27c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.98 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.88 9.89zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg>
+          Agendar via WhatsApp
+        </a>
+      </div>
+
+      <!-- Mapa ilustrativo. Para o mapa real, troque este <a> por um <iframe> de
+           "Compartilhar > Incorporar um mapa" do Google Maps. -->
+      <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Mato+Grosso+452-S+Centro+Lucas+do+Rio+Verde+MT"
+         target="_blank" rel="noopener noreferrer" aria-label="Abrir a localização do estúdio no Google Maps">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="300" fill="#211c1e"/>
+          <g fill="#282224">
+            <rect x="12" y="12" width="70" height="78" rx="6"/><rect x="100" y="12" width="88" height="78" rx="6"/>
+            <rect x="212" y="12" width="88" height="78" rx="6"/><rect x="322" y="12" width="66" height="78" rx="6"/>
+            <rect x="12" y="150" width="70" height="66" rx="6"/><rect x="100" y="150" width="88" height="66" rx="6"/>
+            <rect x="212" y="150" width="88" height="66" rx="6"/><rect x="322" y="150" width="66" height="66" rx="6"/>
+            <rect x="12" y="236" width="176" height="52" rx="6"/><rect x="212" y="236" width="176" height="52" rx="6"/>
+          </g>
+          <g stroke="#3a3335" stroke-linecap="round" fill="none">
+            <path d="M0 100H400" stroke-width="10"/><path d="M0 226H400" stroke-width="10"/>
+            <path d="M91 0V300M200 0V300M311 0V300" stroke-width="10"/>
+          </g>
+          <path d="M0 125H400" stroke="#4a3f3b" stroke-width="20" stroke-linecap="round"/>
+          <path d="M0 125H400" stroke="#d0af6d" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="8 8"/>
+          <text x="18" y="129" font-size="10" fill="#cfc4c1" font-family="Jost, sans-serif">Av. Mato Grosso</text>
+          <circle class="pin-pulse" cx="200" cy="125" r="8" fill="#f3cdd4"/>
+          <path d="M200 127c-13-17-19-25-19-34a19 19 0 1 1 38 0c0 9-6 17-19 34z" fill="#d0af6d"/>
+          <circle cx="200" cy="93" r="7" fill="#151213"/>
+        </svg>
+        <span class="map-chip"><span>Ao lado da Lojas Renner</span><span>Abrir no Google Maps</span></span>
+      </a>
+    </div>
+
+    <p class="copy">© 2026 Studio Bruna Lash &amp; Brow. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- Barra fixa de agendamento (aparece só no celular, depois do topo) -->
+<div class="bar" id="barra">
+  <a class="btn btn-primary btn-block" data-wa
+     data-msg="Olá! Vim pela página do Studio Bruna Lash &amp; Brow e gostaria de agendar um horário."
+     href="https://wa.me/5565996215645" target="_blank" rel="noopener noreferrer">Agende seu Horário</a>
+</div>
+
+<script>
+  // Único lugar para editar o número e a mensagem padrão do WhatsApp.
+  var WA_NUMBER = '5565996215645';
+  var WA_DEFAULT_MSG = 'Olá! Vim pela página do Studio Bruna Lash & Brow e gostaria de agendar um horário.';
+
+  document.querySelectorAll('[data-wa]').forEach(function (a) {
+    var msg = a.dataset.msg || WA_DEFAULT_MSG;
+    a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+
+  // Carrossel
+  (function () {
+    var track = document.getElementById('trilho');
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function stepSize() {
+      var card = track.querySelector('.ba');
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 16;
+      return card.getBoundingClientRect().width + gap;
+    }
+    function update() {
+      var nav = prev.parentNode;
+      nav.hidden = track.scrollWidth <= track.clientWidth + 4;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    }
+    prev.addEventListener('click', function () { track.scrollBy({ left: -stepSize(), behavior: reduce ? 'auto' : 'smooth' }); });
+    next.addEventListener('click', function () { track.scrollBy({ left: stepSize(), behavior: reduce ? 'auto' : 'smooth' }); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // Barra fixa: some quando um dos botões principais já está na tela
+  (function () {
+    var bar = document.getElementById('barra');
+    if (!('IntersectionObserver' in window)) { bar.classList.add('show'); return; }
+    var visible = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target);
+      });
+      bar.classList.toggle('show', visible.size === 0);
+    });
+    document.querySelectorAll('[data-hide-bar]').forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
